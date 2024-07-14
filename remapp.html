@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medieval Reminder App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Reminder App</h1>
+    <form>
+      <label for="day">Day of the Week:</label>
+      <select id="day">
+        <option value="">Select a day</option>
+        <option value="Sunday">Sunday</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+      </select>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" />
+
+      <label for="activity">Activity:</label>
+      <select id="activity">
+        <option value="">Select an activity</option>
+        <option value="Wake up">Wake up</option>
+        <option value="Go to gym">Go to gym</option>
+        <option value="Breakfast">Breakfast</option>
+        <option value="Meetings">Meetings</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Quick nap">Quick nap</option>
+        <option value="Go to library">Go to library</option>
+        <option value="Dinner">Dinner</option>
+        <option value="Go to sleep">Go to sleep</option>
+      </select>
+
+      <button type="button" onclick="setReminder()">Set Reminder</button>
+    </form>
+
+    <ul id="reminderList"></ul>
+
+    <audio id="chime" src="chime.mp3"></audio>
+    <!-- Make sure to include a chime sound file -->
+    <script src="script.js"></script>
+  </body>
+</html>
